@@ -27,7 +27,7 @@
 	"scripts": {
 		"build": "directus-extension build",
 		"dev": "directus-extension build -w --no-minify --sourcemap",
-		"link": "directus-extension link ../extensions",
+		"link": "directus-extension link",
 		"validate": "directus-extension validate"
 	},
 	"devDependencies": {
