@@ -1,5 +1,5 @@
 {
-	"name": "whitebox-mail",
+	"name": "directus-whitebox-mail",
 	"description": "Please enter a description for your extension",
 	"icon": "extension",
 	"version": "1.0.0",
