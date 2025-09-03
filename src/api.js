@@ -17,7 +17,8 @@ export default {
 		if (typeof data === 'string') {
 			data = JSON.parse(data)
 		}
-		const emails = to.split(';').map(email => email.trim()).filter(email => email);
+		const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		const emails = to.split(';').map(email => email.trim()).filter(email => pattern.test(email));
 		for (let email of emails) {
 			await axios.post(url, {
 				to: email, 
