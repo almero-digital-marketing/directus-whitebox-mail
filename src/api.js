@@ -18,9 +18,9 @@ export default {
 			data = JSON.parse(data)
 		}
 		const emails = to.split(';').map(email => email.trim()).filter(email => email);
-		for (let to of emails) {
+		for (let email of emails) {
 			await axios.post(url, {
-				to, 
+				to: email, 
 				from: from || data.from,
 				subject: subject || data.subject || '',
 				message: message || data.message || '',
